@@ -80,7 +80,7 @@
             <template v-if="cationId"> 
               <strong> SMILES: </strong> {{csmiles[cationId]}}
             </template>
-            <template v-else>Choose an anion to print its SMILES here.</template>
+            <template v-else>Choose a cation to print its SMILES here.</template>
           </li>
           <li class="list-group-item">
             <template v-if="cationId"> 
