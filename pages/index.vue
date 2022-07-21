@@ -40,7 +40,7 @@
       <div class="card" style="width: 24rem; border: 1px solid #00695C; border-radius: 1.5rem">
             
         <div class="canvas-container"><canvas id="anions-canvas" width="250" height="250"></canvas></div>
-        <template v-if="(anionId >= 0) & (anionId < 7444)">{{draw(asmiles[anionId - 1], 'anions-canvas')}}</template>
+        <template v-if="(anionId > 0) & (anionId <= 7444)">{{draw(asmiles[anionId - 1], 'anions-canvas')}}</template>
         <template v-else>{{clean('anions-canvas')}}</template>
 
         <div class="card-header">
