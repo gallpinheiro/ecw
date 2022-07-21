@@ -157,7 +157,7 @@
   </div>
   
   <div class="row d-flex justify-content-center" style="margin-top: 30px;">    
-    <template v-if="anionId && cationId">{{ecw()}}</template>
+    <template v-if="(anionId > 0) && (cationId > 0)">{{ecw()}}</template>
     <template v-else>Oh, no. 😢 Please, provide the anion and cation indices. </template>
   </div>
 
