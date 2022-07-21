@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'simulador-alex',
+    title: 'Electrochemical Stability Window',
     htmlAttrs: {
       lang: 'en'
     },
