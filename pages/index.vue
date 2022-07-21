@@ -216,7 +216,7 @@ export default {
 
   methods: {
     ecw(){
-      let esw_value = (Math.min(this.alumo[this.anionId], this.clumo[this.cationId]) + 3.0915315909677425) - (Math.max(this.ahomo[this.anionId], this.chomo[this.cationId]) - 3.4620853512903227)
+      let esw_value = (Math.min(this.alumo[this.anionId - 1], this.clumo[this.cationId - 1]) + 3.0915315909677425) - (Math.max(this.ahomo[this.anionId - 1], this.chomo[this.cationId - 1]) - 3.4620853512903227)
       if (esw_value >= 0){return 'ESW: ' + Math.round(esw_value * 10000) / 10000 + ' V';}
       return 'ESW is negative. 😢';
     },
